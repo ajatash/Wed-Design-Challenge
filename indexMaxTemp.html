@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Weather Data Visualizations</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+ 
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html" style="color: #3C3F42;">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+    <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item">Latitude vs.</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="indexCloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="indexHumidity.html">Humidity</a>
+            <a class="dropdown-item" href="indexMaxTemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="indexWindSpeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexComparison.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexData.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" id="Cover">
+      <h2 style="font-size: 30px; font-weight: bold;">Max Temperature</h2>
+      <br>
+      <img  src="../Webpages/WebVisualizations/Resources/assets/images/Fig1.png" class="img-responsive fit-image" alt="Latitude vs. Max Temp">                  
+          <br>
+              <p style="line-height: 1.3; text-indent: 5%;">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+          
+      </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5" id="MyHover">
+      <h2 style="font-size: 25px; font-weight: bold;">Visualizations</h2><br>
+      <div class="row">
+        <div class="col-md-5">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Latitude vs. Max Temperature</h3>
+            </div>
+              <a href="indexMaxTemp.html" id="MyHover"><img src="Fig1.png" class="img-responsive fit-image" alt ="Max Temp"></a>
+            </div>
+        </div>
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Latitude vs. Humidity</h3>
+            </div>
+            <a href="indexHumidity.html" id="MyHover"><img src="Fig2.png" class="img-responsive fit-image" alt="Humidity"></a>
+          </div>
+          
+        </div>
+        
+        
+        <div class="col-md-5">
+            <div class="thumbnail">
+              <div class="caption">
+                <h3>Latitude vs. Cloudiness</h3>
+          </div>
+              <a href="indexCloudiness.html" id="MyHover"><img src="Fig3.png" class="img-responsive fit-image" alt="Cloudiness"></a>
+            </div>
+        </div>
+        <div class="col-md-5">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Latitude vs. Wind Speed</h3>
+        </div>
+            <a href="indexWindSpeed.html" id="MyHover"><img src="Fig4.png" class="img-responsive fit-image" alt="Wind Speed"></a>
+            </div>
+      </div>
+    
+    </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
+
+    
